@@ -77,17 +77,25 @@
   }
 
   @media (min-width: 768px) {
+
     .logo {
-     
+      position: absolute;
+      left: 48%;
+      top: 8px;
+    
     }
 
-    display: flex;
-    justify-content: space-around;
-
     .menu {
-      display: contents;
+      width: 100vw;
+      display: flex;
       flex-direction: row;
-      align-items: center;
+      justify-content: center;
+      justify-content: space-around;
+
+      li {
+        padding: 0 20px;
+      }
+
     }
 
     .menu-button {
@@ -104,6 +112,8 @@
     }
   }
 }
+
+
 
 
 

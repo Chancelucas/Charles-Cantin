@@ -15,14 +15,17 @@ const Navigation = () => {
 
   return (
     <div className={`navigation ${isMenuOpen ? 'open' : ''}`}>
+
       <div className="logo-container">
         <NavLink to="/" onClick={closeMenu}>
           <img className="logo" src="./Logo.png" alt="Logo Chales Cantin" />
         </NavLink>
       </div>
+
       <button className={`menu-button ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <img src={burgerMenu} alt='Image burger' className="reorder-three-outline"/>
+        <img src={burgerMenu} alt='Image burger' className="logo" />
       </button>
+
       <ul className="menu">
         <NavLink to="/" onClick={closeMenu}>
           <li>Accueil</li>
