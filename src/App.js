@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Accueil from './pages/Accueil';
-import Galerie from './pages/Galerie';
-import Tarifs from './pages/Tarifs';
-import Contact from './pages/Contact';
+import Accueil from './pages/Accueil/Accueil';
+import Galerie from './pages/Galerie/Galerie';
+import Tarifs from './pages/Tarifs/Tarifs';
+import Contact from './pages/Contact/Contact';
 
 const App = () => {
   return (

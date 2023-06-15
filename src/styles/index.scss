@@ -1,8 +1,9 @@
 @import "./settings";
-@import "./pages/Accueil.scss";
-@import "./pages/Galerie.scss";
-@import "./pages/Tarifs.scss";
-@import "./pages/Contact.scss";
-@import "./components/navigation";
+@import "../pages/Accueil/Accueil.scss";
+@import "../pages/Galerie/Galerie.scss";
+@import "../pages/Tarifs/Tarifs.scss";
+@import "../pages/Contact/Contact.scss";
+@import "../components/Navigation/navigation";
+@import "../components/Header/header";
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import burgerMenu from '../assets/image/MenuBurger.svg'
+import burgerMenu from '../../assets/image/MenuBurger.svg'
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
