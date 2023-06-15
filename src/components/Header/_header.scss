@@ -1,23 +1,29 @@
 .header {
   position: relative;
-  left: auto;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 106px;
   z-index: 100;
-  max-width: 1440px;
 
-  img {
-    
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-  }
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 
-  .title{
-    position: absolute;
-    color: $color-2;
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .title {
+      font-style: $font-1;
+      position: absolute;
+      color: $color-2;
+      animation: alternate;
+      font-size: 64px;
+    }
   }
 }
