@@ -1,9 +1,10 @@
-.container {
+.presentation-container {
   display: flex;
   flex-direction: column;
   color: $color-1;
   align-items: center;
   margin-top: 100px;
+  animation: backwards 0.3s;
 
   .title {
     display: flex;
@@ -46,6 +47,7 @@
     background-color: $color-3;
     border: none;
     border-radius: 50px;
+    text-decoration: none;
     color: $color-2;
     box-shadow: 2px 4px 4px $color-5;
   }

@@ -7,7 +7,7 @@
   padding-top: 106px;
   z-index: 100;
 
-  .container {
+  .header-container {
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -22,8 +22,8 @@
       font-style: $font-1;
       position: absolute;
       color: $color-2;
-      animation: alternate;
       font-size: 64px;
+      top: 50%;
     }
   }
 }

@@ -4,7 +4,7 @@ import Image from '../../assets/image/Accueil/presentation.jpg';
 
 const Presenation = () => {
   return (
-    <div className='container'>
+    <div className='presentation-container'>
       <h2 className='title'>Qui suis-je ?</h2>
       <div className='container-text'>
         <p className='text-1'>Passionné par la photo depuis mon plus jeune âge. À travers mon objectif, je capture l'émotion et la beauté du monde qui m'entoure, créant ainsi des images uniques et captivantes. Ma passion est devenue ma profession, prête à éblouir vos regards.</p>
