@@ -2,8 +2,8 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 106px;
+  justify-content: space-between;
+  height: 80px;
   width: 100vw;
   background-color: $color-1;
   z-index: 1000;
@@ -14,8 +14,8 @@
   .logo-container {
     .logo {
       display: flex;
-      height: 90px;
-      width: 90px;
+      height: 50px;
+      width: 50px;
       border-radius: 10px;
       box-shadow: 4px 4px 4px $color-5;
     }
@@ -27,12 +27,13 @@
     flex-direction: column;
     align-items: center;
 
+
     li {
       padding: 30px 0;
       color: $color-2;
     }
 
-    li:hover{
+    li:hover {
       color: $color-3;
     }
   }
@@ -40,10 +41,10 @@
   &.open {
     .menu {
       position: absolute;
-      top: 106px;
+      top: 80px;
       right: 0px;
       height: 100vh;
-      padding-top: 50%;
+      justify-content: center;
       width: 50%;
       display: flex;
       flex-direction: column;
@@ -58,8 +59,14 @@
     border: none;
     cursor: pointer;
 
+
     .reorder-three-outline {
       height: 30px;
+    }
+
+    .logo {
+      height: 50px;
+      width: 50px;
     }
   }
 
@@ -87,20 +94,20 @@
     &.transparent {
       background: $color-2;
       height: 50px;
-  
-      .menu{
-        li{
+
+      .menu {
+        li {
           color: $color-1;
         }
 
-        li:hover{
+        li:hover {
           color: $color-3;
         }
 
       }
-      
-      .logo-container{
-        .logo{
+
+      .logo-container {
+        .logo {
           height: 45px;
           width: 45px;
         }
@@ -135,11 +142,11 @@
     .menu-button {
       display: none;
     }
-    
+
   }
 
   @media (min-width: 1440px) {
-    .logo-container{
+    .logo-container {
       width: 1440px;
     }
 
