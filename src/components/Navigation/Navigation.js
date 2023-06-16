@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import burgerMenu from '../../assets/image/MenuBurger.svg'
+import burgerMenu from '../../assets/image/MenuBurger.svg';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTransparent, setIsTransparent] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,10 +14,24 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        setIsTransparent(true);
+      } else {
+        setIsTransparent(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={`navigation ${isMenuOpen ? 'open' : ''}`}>
-
-
+    <div className={`navigation ${isMenuOpen ? 'open' : ''} ${isTransparent ? 'transparent' : ''}`}>
       <div className="logo-container">
         <NavLink to="/" onClick={closeMenu}>
           <img className="logo" src="./Logo.png" alt="Logo Chales Cantin" />
@@ -24,7 +39,7 @@ const Navigation = () => {
       </div>
 
       <button className={`menu-button ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <img src={burgerMenu} alt='Image burger' className="logo" />
+        <img src={burgerMenu} alt="Image burger" className="logo" />
       </button>
 
       <ul className="menu">
@@ -41,12 +56,8 @@ const Navigation = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
-
     </div>
   );
 };
 
 export default Navigation;
-
-
-

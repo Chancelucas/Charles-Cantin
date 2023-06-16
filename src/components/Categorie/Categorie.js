@@ -25,7 +25,7 @@ const Categorie = () => {
       <Link to="/galerie" className="categorie portrait">
         <p></p>
       </Link>
-      <Link className='btn' to='/galerie'>Mes projets</Link>
+      <Link className='btn-fin' to='/galerie'>Mes projets</Link>
     </div>
   );
 };
