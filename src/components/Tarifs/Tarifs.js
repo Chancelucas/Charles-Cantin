@@ -10,39 +10,39 @@ import ImageEvenement from '../../assets/image/Mariage/nikita-shirokov-qGgjalogC
 
 const Tarifs = () => {
   return (
-    <div className='tarifs-container'>
+    <div className='all-container'>
       <h2 className='title-tarifs'>Tarifs</h2>
+      <div className='tarifs-container'>
+        <span className='tarifs portrait'>
+          <img src={ImagePortrait} alt="Image de portrait" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Juste moi</Link>
+        </span>
 
-      <span className='tarifs portrait'>
-        <img src={ImagePortrait} alt="Image de portrait" className='photo' />
-        <Link className="btn-tarifs" to="/Galerie">Juste moi</Link>
-      </span>
+        <span className='tarifs pour-deux'>
+          <img src={ImagePourDeux} alt="Image de couple" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Pour deux</Link>
+        </span>
 
-      <span className='tarifs pour-deux'>
-        <img src={ImagePourDeux} alt="Image de couple" className='photo'/>
-        <Link className="btn-tarifs" to="/Galerie">Pour deux</Link>
-      </span>
-      
-      <span className='tarifs famille'>
-        <img src={ImageFamille} alt="Image de famille" className='photo'/>
-        <Link className="btn-tarifs" to="/Galerie">Famille</Link>
-      </span>
+        <span className='tarifs famille'>
+          <img src={ImageFamille} alt="Image de famille" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Famille</Link>
+        </span>
 
-      <span className='tarifs grossesse'>
-        <img src={ImageGrossesse} alt="Image de femme enceinte" className='photo'/>
-        <Link className="btn-tarifs" to="/Galerie">Il était une fois</Link>
-      </span>
+        <span className='tarifs grossesse'>
+          <img src={ImageGrossesse} alt="Image de femme enceinte" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Il était une fois</Link>
+        </span>
 
-      <span className='tarifs bebe'>
-        <img src={ImageBebe} alt="Image de bébé" className='photo'/>
-        <Link className="btn-tarifs" to="/Galerie">Bébé</Link>
-      </span>
+        <span className='tarifs bebe'>
+          <img src={ImageBebe} alt="Image de bébé" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Bébé</Link>
+        </span>
 
-      <span className='tarifs evenement'>
-        <img src={ImageEvenement} alt="Image d'évenement" className='photo'/>
-        <Link className="btn-tarifs" to="/Galerie">Evénement sur mesure</Link>
-      </span>
-
+        <span className='tarifs evenement'>
+          <img src={ImageEvenement} alt="Image d'évenement" className='photo' />
+          <Link className="btn-tarifs" to="/Tarifs">Evénement sur mesure</Link>
+        </span>
+      </div>
     </div>
   );
 };

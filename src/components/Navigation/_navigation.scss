@@ -5,9 +5,9 @@
   justify-content: space-between;
   height: 80px;
   width: 100vw;
-  background-color: $color-1;
+  background-color: $color-2;
   z-index: 1000;
-  padding: 0px 20px;
+  padding: 0px 30px;
   transition: background-color 0.3s ease, color 0.5s ease;
 
 
@@ -17,7 +17,6 @@
       height: 50px;
       width: 50px;
       border-radius: 10px;
-      box-shadow: 4px 4px 4px $color-5;
     }
   }
 
@@ -30,7 +29,8 @@
 
     li {
       padding: 30px 0;
-      color: $color-2;
+      color: $color-1;
+      
     }
 
     li:hover {
@@ -50,10 +50,10 @@
       flex-direction: column;
       align-items: center;
       animation: slide-in 0.3s forwards;
-      background-color: $color-1;
+      background-color: $color-2;
+      
     }
   }
-
   .menu-button {
     background: none;
     border: none;
@@ -65,8 +65,8 @@
     }
 
     .logo {
-      height: 50px;
-      width: 50px;
+      height: 30px;
+      width: 40px;
     }
   }
 
@@ -123,8 +123,8 @@
 
       .logo {
         display: inline;
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
       }
     }
 
@@ -146,6 +146,8 @@
   }
 
   @media (min-width: 1440px) {
+    justify-content: center;
+
     .logo-container {
       width: 1440px;
     }
