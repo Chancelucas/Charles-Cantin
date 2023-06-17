@@ -8,12 +8,10 @@
   padding: 50px 0;
 
   .title-form {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: $color-1;
-    width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
   }
 
   .form {
@@ -21,11 +19,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    align-content: center;
+    
 
     .cellule {
       position: relative;
-      margin-bottom: 10px;
+      margin: 5px 0;
 
       input,
       textarea {
@@ -121,11 +120,13 @@
     font-size: 64px;
 
     .form {
+    
       .cellule {
         margin-bottom: 0;
 
         .input-text{
-          margin: -10px 0;
+          width: 30rem;
+          height: 3rem;
         }
         input,
         textarea {
@@ -133,7 +134,7 @@
           &:focus,
           &:valid {
             ~label {
-              transform: translateY(-30%);
+              transform: translateY(-75%);
             }
           }
         }
@@ -142,12 +143,13 @@
           transform: translateY(50%);
         }
 
-        .btn-contact{
-          margin-top: 20px 0;
+        textarea{
+          transform: translateY(20%);
         }
       }
-
-      
+      .btn-contact{
+        margin-top: 40px;      
+      }
     }
   }
 }

@@ -134,7 +134,6 @@
         content: "Portrait";
       }
     }
-
   }
 
   .btn-fin {
@@ -188,12 +187,13 @@
   }
 
   @media (min-width: 787px) {
-    .categorie{
+    .categorie {
       height: 400px;
       width: 600px;
       margin: 80px 0;
     }
-    .btn-fin{
+
+    .btn-fin {
       width: 285px;
       height: 51px;
       font-size: 23px;
@@ -201,29 +201,17 @@
       justify-content: center;
     }
 
-    .btn-fin:hover{
+    .btn-fin:hover {
       color: $color-1;
       background-color: $color-4;
     }
   }
 
-
-
   @media (min-width: 1220px) {
-    .categorie{
+    .categorie {
       height: 600px;
       width: 927.7px;
       margin: 80px 0;
     }
   }
-
-
-
-
-
-
 }
-
-
-
-
