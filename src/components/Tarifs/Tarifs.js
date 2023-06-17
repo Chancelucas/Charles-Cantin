@@ -14,33 +14,33 @@ const Tarifs = () => {
       <h2 className='title-tarifs'>Tarifs</h2>
       <div className='tarifs-container'>
         <span className='tarifs portrait'>
-          <img src={ImagePortrait} alt="Image de portrait" className='photo' />
+          <div className='photo photo-portrait' />
           <Link className="btn-tarifs" to="/Tarifs">Juste moi</Link>
         </span>
 
         <span className='tarifs pour-deux'>
-          <img src={ImagePourDeux} alt="Image de couple" className='photo' />
+        <div className='photo photo-duo' />
           <Link className="btn-tarifs" to="/Tarifs">Pour deux</Link>
         </span>
 
         <span className='tarifs famille'>
-          <img src={ImageFamille} alt="Image de famille" className='photo' />
+        <div className='photo photo-famille' />
           <Link className="btn-tarifs" to="/Tarifs">Famille</Link>
         </span>
 
         <span className='tarifs grossesse'>
-          <img src={ImageGrossesse} alt="Image de femme enceinte" className='photo' />
+        <div className='photo photo-grossesse' />
           <Link className="btn-tarifs" to="/Tarifs">Il était une fois</Link>
         </span>
 
         <span className='tarifs bebe'>
-          <img src={ImageBebe} alt="Image de bébé" className='photo' />
+        <div className='photo photo-bebe' />
           <Link className="btn-tarifs" to="/Tarifs">Bébé</Link>
         </span>
 
         <span className='tarifs evenement'>
-          <img src={ImageEvenement} alt="Image d'évenement" className='photo' />
-          <Link className="btn-tarifs" to="/Tarifs">Evénement sur mesure</Link>
+        <div className='photo photo-evenement' />
+          <Link className="btn-tarifs" to="/Tarifs">Evénement</Link>
         </span>
       </div>
     </div>

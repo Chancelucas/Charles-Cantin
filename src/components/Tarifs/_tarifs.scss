@@ -3,10 +3,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: $color-1;
 
   .title-tarifs {
-    padding: 20px 0;
-    color: $color-1;
+    padding-top: 50px;
+    color: $color-2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,11 +23,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $color-1;
     padding: 50px 0;
-    background-color: $color-2;
-  
-  
+    background-color: $color-1;
+    
     .photo {
       height: 120px;
       width: 120px;
@@ -34,7 +33,48 @@
       margin: 0 20px;
       box-shadow: 2px 4px 4px $color-5;
     }
+
+    .photo-portrait{
+      background: url(../../assets/image/Portrait/ali-morshedlou-WMD64tMfc4k-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   
+    .photo-duo{
+      background: url(../../assets/image/Couple/candice-picard-vLENm-coX5Y-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .photo-famille{
+      background: url(../../assets/image/Famille/luemen-rutkowski-ZWbBxZ6zTwM-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .photo-grossesse{
+      background: url(../../assets/image/Grossesse/neal-e-johnson-iLNKpdI0Pzg-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .photo-bebe{
+      background: url(../../assets/image/Bebe/jonathan-borba-CgWTqYxHEkg-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .photo-evenement{
+      background: url(../../assets/image/Mariage/leonardo-miranda-dvF6s1H1x68-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .tarifs {
       display: flex;
       padding: 0 20px;
@@ -43,8 +83,6 @@
       padding: 30px 0;
   
     }
-  
-  
   
     .pour-deux {
       display: flex;
@@ -62,7 +100,7 @@
     }
   
     .btn-tarifs {
-      color: $color-1;
+      color: $color-2;
       text-decoration: none;
       padding: .75rem 1.25rem;
       transition: all .3s;
