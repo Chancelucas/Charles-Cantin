@@ -1,12 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from 'react-router-dom';
-import ImagePortrait from '../../assets/image/Portrait/ali-morshedlou-WMD64tMfc4k-unsplash.jpg';
-import ImagePourDeux from '../../assets/image/Couple/allef-vinicius-0dXvugMScIY-unsplash.jpg';
-import ImageFamille from '../../assets/image/Famille/ioann-mark-kuznietsov-9QTQFihyles-unsplash.jpg';
-import ImageGrossesse from '../../assets/image/Grossesse/camylla-battani-son4VHt4Ld0-unsplash.jpg';
-import ImageBebe from '../../assets/image/Bebe/christian-bowen-OJOE587CWuE-unsplash.jpg';
-import ImageEvenement from '../../assets/image/Mariage/nikita-shirokov-qGgjalogCdE-unsplash.jpg';
 
 const Tarifs = () => {
   return (

@@ -1,0 +1,17 @@
+.politique-container{
+  padding: 100px 0;
+  color: $color-1;
+  display: flex;
+  flex-direction: column;
+
+  .title-h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .title-h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+  }
+}

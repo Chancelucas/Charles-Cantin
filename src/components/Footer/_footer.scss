@@ -1,1 +1,25 @@
-@import "../ContactForm/contactForm"
+@import "../ContactForm/contactForm";
+
+.liens-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  .lien {
+    text-decoration: none;
+    color: $color-1;
+    cursor: pointer;
+
+    &:hover{
+      color: $color-3;
+    }
+  }
+
+  .copyright {
+    color: $color-1;
+    font-size: 10px;
+    padding: 10px 0;
+  }
+}

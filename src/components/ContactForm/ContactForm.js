@@ -12,10 +12,10 @@ const ContactForm = () => {
   const [focusedField, setFocusedField] = useState(null);
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
   const handleFocus = (fieldName) => {
@@ -41,11 +41,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className='form-container'>
-      <h2 className='title-form'>Nous contacter</h2>
-      <form onSubmit={handleSubmit} className='form'>
-        <div className='cellule'>
+    <div className="form-container">
+      <h2 className="title-form">Nous contacter</h2>
+      <form onSubmit={handleSubmit} className="form">
+        <div className="cellule">
           <input
+            className='input-text'
             type="text"
             id="firstName"
             name="firstName"
@@ -55,12 +56,16 @@ const ContactForm = () => {
             onBlur={handleBlur}
             required
           />
-          <label htmlFor="firstName" className={focusedField === 'firstName' ? 'label-active' : ''}>
+          <label
+            htmlFor="firstName"
+            className={focusedField === 'firstName' ? 'label-active' : ''}
+          >
             Nom
           </label>
         </div>
-        <div className='cellule'>
+        <div className="cellule">
           <input
+            className='input-text'
             type="text"
             id="lastName"
             name="lastName"
@@ -70,12 +75,16 @@ const ContactForm = () => {
             onBlur={handleBlur}
             required
           />
-          <label htmlFor="lastName" className={focusedField === 'lastName' ? 'label-active' : ''}>
+          <label
+            htmlFor="lastName"
+            className={focusedField === 'lastName' ? 'label-active' : ''}
+          >
             Prénom
           </label>
         </div>
-        <div className='cellule'>
+        <div className="cellule">
           <input
+            className='input-text'
             type="tel"
             id="phoneNumber"
             name="phoneNumber"
@@ -85,12 +94,16 @@ const ContactForm = () => {
             onBlur={handleBlur}
             required
           />
-          <label htmlFor="phoneNumber" className={focusedField === 'phoneNumber' ? 'label-active' : ''}>
+          <label
+            htmlFor="phoneNumber"
+            className={focusedField === 'phoneNumber' ? 'label-active' : ''}
+          >
             Numéro de téléphone
           </label>
         </div>
-        <div className='cellule'>
+        <div className="cellule">
           <input
+            className='input-text'
             type="email"
             id="email"
             name="email"
@@ -100,12 +113,16 @@ const ContactForm = () => {
             onBlur={handleBlur}
             required
           />
-          <label htmlFor="email" className={focusedField === 'email' ? 'label-active' : ''}>
+          <label
+            htmlFor="email"
+            className={focusedField === 'email' ? 'label-active' : ''}
+          >
             exemple@test.com
           </label>
         </div>
-        <div className='cellule'>
+        <div className="cellule">
           <textarea
+            className='input-text'
             id="message"
             name="message"
             value={formData.message}
@@ -114,11 +131,18 @@ const ContactForm = () => {
             onBlur={handleBlur}
             required
           ></textarea>
-          <label htmlFor="message" className={focusedField === 'message' ? 'label-active' : ''}>
-            message
+          <label
+            htmlFor="message"
+            className={`message-label ${
+              focusedField === 'message' ? 'label-active' : ''
+            }`}
+          >
+            Message
           </label>
         </div>
-        <button type="submit" className='btn-contact'>Envoyer</button>
+        <button type="submit" className="btn-contact">
+          Envoyer
+        </button>
       </form>
     </div>
   );
