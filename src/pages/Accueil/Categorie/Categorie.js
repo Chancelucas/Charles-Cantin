@@ -27,7 +27,8 @@ const Categorie = () => {
       <Link to="/galerie" className="categorie portrait">
         <p></p>
       </Link>
-      <BoutonGalerie/>
+      <BoutonGalerie buttonText="Mes projets" />
+
     </div>
   );
 };

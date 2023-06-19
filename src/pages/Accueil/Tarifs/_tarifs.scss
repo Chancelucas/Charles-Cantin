@@ -81,6 +81,7 @@
       }
 
       &.pour-deux {
+        flex-direction: row-reverse;
         .photo-duo {
           background-position: center;
           background-repeat: no-repeat;
@@ -97,6 +98,7 @@
       }
 
       &.grossesse {
+        flex-direction: row-reverse;
         .photo-grossesse {
           background-position: center;
           background-repeat: no-repeat;
@@ -113,6 +115,7 @@
       }
 
       &.evenement {
+        flex-direction: row-reverse;
         .photo-evenement {
           background-position: center;
           background-repeat: no-repeat;
@@ -139,36 +142,42 @@
       .tarif-link {
         display: flex;
         flex-direction: column;
-      }
 
-      .portrait {
-        grid-column: 1;
-        grid-row: 1;
-      }
-
-      .pour-deux {
-        grid-column: 2;
-        grid-row: 1;
-      }
-
-      .famille {
-        grid-column: 3;
-        grid-row: 1;
-      }
-
-      .grossesse {
-        grid-column: 1;
-        grid-row: 2;
-      }
-
-      .bebe {
-        grid-column: 2;
-        grid-row: 2;
-      }
-
-      .evenement {
-        grid-column: 3;
-        grid-row: 2;
+        &.portrait {
+          grid-column: 1;
+          grid-row: 1;
+        }
+  
+        &.pour-deux {
+          display: flex;
+          flex-direction: column;
+          grid-column: 2;
+          grid-row: 1;
+        }
+  
+        &.famille {
+          grid-column: 3;
+          grid-row: 1;
+        }
+  
+        &.grossesse {
+          display: flex;
+          flex-direction: column;
+          grid-column: 1;
+          grid-row: 2;
+        }
+  
+        &.bebe {
+          grid-column: 2;
+          grid-row: 2;
+        }
+  
+        &.evenement {
+          display: flex;
+          flex-direction: column;
+          grid-column: 3;
+          grid-row: 2;
+        }
       }
     }
   }

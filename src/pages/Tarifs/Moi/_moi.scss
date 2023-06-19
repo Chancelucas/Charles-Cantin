@@ -6,7 +6,9 @@
 
   .photo-moi {
     width: 100vw;
+    max-width: 500px;
     height: 300px;
+    margin-top: 50px;
     background-image: url(../../../assets/image/Portrait/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -21,5 +23,11 @@
 
   .price-moi{
     margin: 30px 0;
+  }
+
+  .text-moi{
+    margin: 0 20px;
+    width: auto;
+    max-width: 500px;
   }
 }

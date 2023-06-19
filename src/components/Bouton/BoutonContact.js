@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BoutonContact = () => {
+const BoutonContact = ({buttonText}) => {
   return (
     <div>
-      <Link className="btn-contact" to="/Contact">Lire plus</Link>
+      <Link className="btn-contact" to="/Contact">{buttonText}</Link>
     </div>
   );
 };

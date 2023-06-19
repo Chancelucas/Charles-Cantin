@@ -17,7 +17,8 @@ const Presentation = () => {
         </p>
         <img src={Image} alt="Photo de présentation" className="image-presentation" />
       </div>
-      <BoutonContact/>
+      <BoutonContact buttonText="En savoir plus" />
+
     </div>
   );
 };
