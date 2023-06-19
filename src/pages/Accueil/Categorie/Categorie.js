@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BoutonGalerie from '../../../components/Bouton/BoutonGalerie';
+
 
 const Categorie = () => {
   return (
@@ -25,7 +27,7 @@ const Categorie = () => {
       <Link to="/galerie" className="categorie portrait">
         <p></p>
       </Link>
-      <Link className='btn-fin' to='/galerie'>Mes projets</Link>
+      <BoutonGalerie/>
     </div>
   );
 };

@@ -1,0 +1,25 @@
+.container-moi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .photo-moi {
+    width: 100vw;
+    height: 300px;
+    background-image: url(../../../assets/image/Portrait/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-moi{
+    margin-top: 30px;
+    font-family: $font-1;
+   
+  }
+
+  .price-moi{
+    margin: 30px 0;
+  }
+}

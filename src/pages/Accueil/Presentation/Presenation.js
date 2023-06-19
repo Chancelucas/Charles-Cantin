@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image from '../../assets/image/Accueil/presentation.jpg';
+import Image from '../../../assets/image/Accueil/presentation.jpg';
+import BoutonContact from '../../../components/Bouton/BoutonContact';
 
 const Presentation = () => {
   return (
@@ -16,7 +17,7 @@ const Presentation = () => {
         </p>
         <img src={Image} alt="Photo de présentation" className="image-presentation" />
       </div>
-      <Link className="btn" to="/contact">Lire plus</Link>
+      <BoutonContact/>
     </div>
   );
 };

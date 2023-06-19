@@ -1,0 +1,26 @@
+.container-evenement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .photo-evenement {
+    width: 100vw;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url(../../../assets/image/Mariage/fabio-alves-BpeTaQozgN4-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-evenement {
+    margin-top: 30px;
+    font-family: $font-1;
+   
+  }
+
+  .price-evenement {
+    margin: 30px 0;
+  }
+}

@@ -1,16 +1,45 @@
 @import "./settings";
+
+// La page Accueil
 @import "../pages/Accueil/Accueil.scss";
+@import "../pages/Accueil/Header/header";
+@import "../pages/Accueil/Presentation/presentation";
+@import "../pages/Accueil/Categorie/categorie";
+@import "../pages/Accueil/Tarifs/tarifs";
+
+// La page Galerie
 @import "../pages/Galerie/Galerie.scss";
-@import "../pages/Tarifs/Tarifs.scss";
+
+
+// La page Tarif
+@import "../pages/Tarifs/tarifs";
+@import "../pages/Tarifs/Moi/moi";
+@import "../pages/Tarifs/Deux/deux";
+@import "../pages/Tarifs/Famille/famille";
+@import "../pages/Tarifs/Grossesse/grossesse";
+@import "../pages/Tarifs/bebe/bebe";
+@import "../pages/Tarifs/evenement/evenement";
+
+
+
+
 @import "../pages/Contact/Contact.scss";
+
+
+
 @import "../pages/Politique/politique";
 @import "../pages/Mentions/mentions";
-@import "../components/Navigation/navigation";
-@import "../components/Header/header";
-@import "../components/Presentation/presentation";
-@import "../components/Categorie/categorie";
-@import "../components/Tarifs/tarifs";
+
+// Les components 
+@import "../components/ContactForm/contactForm";
 @import "../components/Footer/footer";
+@import "../components/Navigation/navigation";
+@import "../components/Bouton/boutonContact";
+@import "../components/Bouton/boutonGalerie";
+
+
+
+
 
 
 

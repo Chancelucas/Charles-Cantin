@@ -1,0 +1,26 @@
+.container-grossesse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .photo-grossesse {
+    width: 100vw;
+    height: 300px;
+    margin-top: 50px;
+    background-image: url(../../../assets/image/Grossesse/jonathan-borba-5Goau2kMWXQ-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title-grossesse {
+    margin-top: 30px;
+    font-family: $font-1;
+   
+  }
+
+  .price-grossesse {
+    margin: 30px 0;
+  }
+}
