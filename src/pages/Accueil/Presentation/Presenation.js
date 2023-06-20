@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Image from '../../../assets/image/Accueil/presentation.jpg';
 import BoutonContact from '../../../components/Bouton/BoutonContact';
 
