@@ -22,14 +22,12 @@
 @import "../pages/Tarifs/bebe/bebe";
 @import "../pages/Tarifs/evenement/evenement";
 
-
-
-
+// La page Contact
 @import "../pages/Contact/Contact.scss";
 @import "../pages/Contact/Description/description";
 
 
-
+// Autre
 @import "../pages/Politique/politique";
 @import "../pages/Mentions/mentions";
 
@@ -39,6 +37,7 @@
 @import "../components/Navigation/navigation";
 @import "../components/Bouton/boutonContact";
 @import "../components/Bouton/boutonGalerie";
+@import "../components/ScrollToTopButton/scrollToUpButton";
 
 
 

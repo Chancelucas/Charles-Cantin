@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/Navigation';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 
 const Mentions = () => {
   return (
@@ -32,6 +33,7 @@ const Mentions = () => {
         <h3 className='title-h3'>7. Modification des mentions légales</h3>
         <p>CHARLES CANTIN se réserve le droit de modifier les présentes mentions légales à tout moment. Nous vous encourageons à consulter cette page régulièrement pour prendre connaissance des éventuelles modifications.</p>
       </div>
+      <ScrollToTopButton/>
     </div>
   );
 };

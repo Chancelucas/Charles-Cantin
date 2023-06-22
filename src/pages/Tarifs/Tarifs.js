@@ -7,10 +7,11 @@ import Famille from './Famille/Famille';
 import Grossesse from './Grossesse/Grossesse';
 import Bebe from './bebe/Bebe';
 import Evenement from './evenement/Evenement';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 
 const Tarifs = () => {
   return (
-    <div>
+    <div className='div-tarif'>
       <Navigation/>
       <div className='container-all-tarifs'>
         <div className='container-all'>
@@ -23,6 +24,7 @@ const Tarifs = () => {
         </div>
       </div>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   );
 };

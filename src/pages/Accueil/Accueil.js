@@ -5,16 +5,18 @@ import Presentation from '../Accueil/Presentation/Presenation';
 import Categorie from '../Accueil/Categorie/Categorie';
 import Tarifs from '../Accueil/Tarifs/Tarifs';
 import Footer from '../../components/Footer/Footer';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 
 const Accueil = () => {
   return (
-    <div>
+    <div className='div-accueil'>
       <Navigation/>
       <Header/> 
       <Presentation/> 
       <Categorie/>
       <Tarifs/>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   );
 };

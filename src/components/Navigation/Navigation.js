@@ -30,6 +30,18 @@ const Navigation = () => {
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    // Scroll to top when changing the page
+    scrollToTop();
+  }, []);
+
   return (
     <div className={`navigation ${isMenuOpen ? 'open' : ''} ${isTransparent ? 'transparent' : ''}`}>
       <div className="logo-container">

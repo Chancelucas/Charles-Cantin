@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/Navigation';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 
 const Politique = () => {
   return (
@@ -35,6 +36,7 @@ const Politique = () => {
         <h3 className='title-h3'>6. Modification de la politique de confidentialité</h3>
         <p>Nous nous réservons le droit de modifier la présente politique de confidentialité à tout moment. Nous vous encourageons à consulter cette page régulièrement pour prendre connaissance des éventuelles modifications.</p>
       </div>
+      <ScrollToTopButton/>
     </div>
   );
 };

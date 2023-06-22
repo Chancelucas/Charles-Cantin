@@ -52,7 +52,7 @@ import image49 from '../../../assets/image/Portrait/edward-cisneros-_H6wpor9mjs-
 import image50 from '../../../assets/image/Portrait/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg';
 import image51 from '../../../assets/image/Portrait/michael-dam-mEZ3PoFGs_k-unsplash.jpg';
 import image52 from '../../../assets/image/Portrait/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg';
-import './_photoGallery.scss';
+
 
 const PhotoGallery = () => {
   const photos = [

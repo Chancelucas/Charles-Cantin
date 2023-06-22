@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Image from '../../../assets/image/Mariage/vadim-paripa-PuXtB1B4zL8-unsplash.jpg';
 
 
