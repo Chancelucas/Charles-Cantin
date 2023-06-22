@@ -1,14 +1,14 @@
 import React from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer/Footer';
-import Photo from './Photo/Photo';
+import PhotoGallery from './PhotoGallery/PhotoGallery';
 
 const Galerie = () => {
   return (
     <div>
       <Navigation/>
       <div>
-        <Photo/>
+        <PhotoGallery/>
       </div>
       <Footer/>
     </div>

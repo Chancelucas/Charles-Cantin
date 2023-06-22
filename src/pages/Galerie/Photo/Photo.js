@@ -1,18 +1,10 @@
 import React from 'react';
+import './_photo.scss';
 
-
-const Photo = () => {
-  
+const Photo = ({ imageUrl }) => {
   return (
-    <div className="photo-container">
-      <div className="photo-bapteme">
-        <div className="photo bapteme-1"></div>
-        <span className="photo bapteme-2"></span>
-        <span className="photo bapteme-3"></span>
-        <span className="photo bapteme-4"></span>
-
-
-      </div>
+    <div className="photo">
+      <img src={imageUrl} alt="Photo" />
     </div>
   );
 };

@@ -1,30 +1,17 @@
-.photo-container {
+.photo {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #e1e1e1;
+}
 
-  .photo-bapteme{
-    height: 100px;
-    width: 90px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .bapteme-1{
-      background: url(../../../assets/image/Bapteme/anna-hecker-ecbXfGuiGEM-unsplash.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .bapteme-2{
-      background: url(../../../assets/image/Bapteme/jonathan-borba-oHB7VKdpHQM-unsplash.jpg);
-    }
-
-    .bapteme-3{
-      background: url(../../../assets/image/Bapteme/jonathan-borba-VCjhp_UHk2w-unsplash.jpg);
-    }
-    
-    .bapteme-4{
-      background: url(../../../assets/image/Bapteme/katrien-sterckx-fn0xXL9szcU-unsplash.jpg);
-    }
-  }
+.photo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
